@@ -2,14 +2,16 @@ import BlogCard from "@/components/BlogCard";
 import Header from "@/components/Header";
 
 async function getPosts() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "no-store",
-  });
+  const response = await fetch(
+    "https://jsonplaceholder.typicode.com/posts?_limit=12",
+    {
+      cache: "no-store",
+    },
+  );
   if (!response.ok) {
     throw new Error("Failed to fetch posts");
   }
-  const posts = await response.json();
-  return posts.slice(0, 12);
+  return await response.json();
 }
 
 export default async function Home() {
