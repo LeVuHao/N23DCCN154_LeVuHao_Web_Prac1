@@ -13,6 +13,14 @@ async function getPost(id) {
   return await response.json();
 }
 
+export async function generateMetadata({ params }) {
+  const post = await getPost(params.id);
+  return {
+    title: `${post.title} | MyBlog`,
+    description: post.body.slice(0, 120),
+  };
+}
+
 export default async function BlogDetail({ params }) {
   const post = await getPost(params.id);
 
