@@ -19,6 +19,10 @@ npm run dev
 
 Mở `http://localhost:3000` trong trình duyệt.
 
+## JavaScript project
+
+Dự án này đã được chuyển sang JavaScript hoàn toàn, không dùng TypeScript. Tệp `jsconfig.json` được sử dụng để giữ alias `@/*` hoạt động trong Next.js.
+
 ## Công nghệ sử dụng
 
 - Next.js App Router
