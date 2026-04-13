@@ -1,7 +1,7 @@
 export default function Badge({ label, color = "gray" }) {
   const style =
-    color === "indigo"
-      ? "bg-indigo-100 text-indigo-700"
+    color === "blue"
+      ? "bg-sky-100 text-sky-700"
       : "bg-slate-100 text-slate-700";
 
   return (

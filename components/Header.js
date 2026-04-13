@@ -12,7 +12,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link
           href="/"
-          className="text-xl font-semibold tracking-tight text-slate-900"
+          className="text-xl font-semibold tracking-tight text-sky-900"
         >
           MyBlog
         </Link>
@@ -22,7 +22,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-slate-600 transition hover:text-slate-900"
+              className="text-sm font-medium text-slate-600 transition hover:text-sky-900"
             >
               {item.label}
             </Link>
@@ -31,7 +31,7 @@ export default function Header() {
 
         <Link
           href="#subscribe"
-          className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
+          className="rounded-full bg-sky-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700"
         >
           Subscribe
         </Link>

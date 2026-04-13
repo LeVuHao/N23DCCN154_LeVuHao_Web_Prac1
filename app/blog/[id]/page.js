@@ -29,7 +29,7 @@ export default async function BlogDetail({ params }) {
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-8 rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
-            <span className="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-indigo-700">
+            <span className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
               User {post.userId}
             </span>
             <span className="text-xs uppercase tracking-[0.24em] text-slate-500">
@@ -37,7 +37,7 @@ export default async function BlogDetail({ params }) {
             </span>
           </div>
 
-          <h1 className="mb-6 text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl">
+          <h1 className="mb-6 text-3xl font-semibold leading-tight text-sky-900 sm:text-4xl">
             {post.title}
           </h1>
           <p className="max-w-3xl text-base leading-8 text-slate-600">
@@ -47,7 +47,7 @@ export default async function BlogDetail({ params }) {
 
         <Link
           href="/"
-          className="inline-flex rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+          className="inline-flex rounded-full border border-sky-300 bg-sky-50 px-5 py-3 text-sm font-semibold text-sky-900 transition hover:border-sky-400 hover:bg-sky-100"
         >
           ← Back to Blog
         </Link>

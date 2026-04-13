@@ -3,9 +3,9 @@ import Badge from "@/components/Badge";
 
 export default function BlogCard({ post }) {
   return (
-    <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <article className="overflow-hidden rounded-3xl border border-sky-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <Badge label={`User ${post.userId}`} color="indigo" />
+        <Badge label={`User ${post.userId}`} color="blue" />
         <span className="text-xs uppercase tracking-[0.24em] text-slate-500">
           Blog
         </span>
@@ -24,7 +24,7 @@ export default function BlogCard({ post }) {
         </span>
         <Link
           href={`/blog/${post.id}`}
-          className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
+          className="rounded-full bg-sky-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700"
         >
           Read More
         </Link>
