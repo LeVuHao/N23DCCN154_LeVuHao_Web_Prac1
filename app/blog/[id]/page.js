@@ -1,13 +1,6 @@
 import Link from "next/link";
 
-type Post = {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-};
-
-async function getPost(id: string) {
+async function getPost(id) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`,
     {
@@ -17,14 +10,10 @@ async function getPost(id: string) {
   if (!response.ok) {
     throw new Error("Post not found");
   }
-  return (await response.json()) as Post;
+  return await response.json();
 }
 
-export default async function BlogDetail({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default async function BlogDetail({ params }) {
   const post = await getPost(params.id);
 
   return (

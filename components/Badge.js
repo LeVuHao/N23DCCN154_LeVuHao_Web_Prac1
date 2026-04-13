@@ -1,9 +1,4 @@
-type BadgeProps = {
-  label: string;
-  color?: "indigo" | "gray";
-};
-
-export default function Badge({ label, color = "gray" }: BadgeProps) {
+export default function Badge({ label, color = "gray" }) {
   const style =
     color === "indigo"
       ? "bg-indigo-100 text-indigo-700"

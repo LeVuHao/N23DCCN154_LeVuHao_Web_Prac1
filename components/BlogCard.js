@@ -1,14 +1,7 @@
 import Link from "next/link";
 import Badge from "@/components/Badge";
 
-type Post = {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-};
-
-export default function BlogCard({ post }: { post: Post }) {
+export default function BlogCard({ post }) {
   return (
     <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">

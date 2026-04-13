@@ -1,13 +1,6 @@
 import BlogCard from "@/components/BlogCard";
 import Header from "@/components/Header";
 
-type Post = {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-};
-
 async function getPosts() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store",
@@ -15,7 +8,7 @@ async function getPosts() {
   if (!response.ok) {
     throw new Error("Failed to fetch posts");
   }
-  const posts = (await response.json()) as Post[];
+  const posts = await response.json();
   return posts.slice(0, 12);
 }
 
