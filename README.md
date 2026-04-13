@@ -1,6 +1,6 @@
 # N23DCCN154_LeVuHao_Web_Prac1
 
-- Họ tên: Lê Vũ Hào
+- Họ tên: Lê Vũ Hảo
 - MSSV: N23DCCN154
 - Bài tập: Thực hành Web 1 - Blog Listing Page bằng Next.js và Tailwind CSS
 
